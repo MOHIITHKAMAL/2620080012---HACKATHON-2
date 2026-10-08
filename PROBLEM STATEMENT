@@ -1,0 +1,35 @@
+
+Problem Statement: Bank Account Management System
+
+
+Objective
+
+Write an object-oriented Java program to implement a basic Bank Account Management System. The program must define a standard class structure to handle account initialization, deposit, withdrawal operations, and displaying account information using separate object methods.
+
+Requirements
+
+1. Class Design (BankAccount)
+Create a class named BankAccount containing the following components:
+• Data Members (Fields):
+	• accountNumber (String or numeric type)
+	• accountHolderName (String)
+	• balance (double)
+• Constructor:
+	• A parameterized constructor that accepts inputs for all three data members and initializes the object's account details.
+• Methods:
+	• deposit(double amount): Adds the given amount to the current balance.
+	• withdraw(double amount): Deducts the given amount from the balance only if the account has a sufficient balance.
+	• checkBalance(): Returns the current balance value.
+	• displayAccount(): Prints all the account details (Account Number, Holder Name, and Balance) to the console.
+2. Execution Logic (main method)
+Inside the Main execution class, implement the following sequential steps:
+1. Read the account details (accountNumber, accountHolderName) and the initialBalance from the standard user input.
+2. Instantiate a BankAccount object by passing these initial inputs into the parameterized constructor.
+3. Read a deposit amount from the user and call the deposit() method.
+4. Read a withdrawal amount from the user and call the withdraw() method.
+5. Call the displayAccount() method to output the final account details and updated balance.
+
+Constraints
+
+• All balance modifications (depositing and withdrawing) must be processed through their respective class methods. Do not calculate or change the balance variables directly within the main() method.
+• A withdrawal should only succeed if the withdrawal amount is less than or equal to the active balance.
